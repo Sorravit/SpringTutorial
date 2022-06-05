@@ -1,13 +1,13 @@
-package sorravit.sprinttutorial;
+package sorravit.springtutorial;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SprintTutorialApplication {
+public class SpringTutorialApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SprintTutorialApplication.class, args);
+        SpringApplication.run(SpringTutorialApplication.class, args);
     }
 
 }

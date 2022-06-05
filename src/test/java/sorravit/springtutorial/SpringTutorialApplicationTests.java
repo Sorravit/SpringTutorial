@@ -1,10 +1,10 @@
-package sorravit.sprinttutorial;
+package sorravit.springtutorial;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SprintTutorialApplicationTests {
+class SpringTutorialApplicationTests {
 
     @Test
     void contextLoads() {
