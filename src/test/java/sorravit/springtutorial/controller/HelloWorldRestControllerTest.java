@@ -14,6 +14,7 @@ import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.web.servlet.MockMvc;
 import sorravit.springtutorial.service.GetMessageService;
 
+//Will only create bean required for the testing, and it's lighter than @SpringBootTest
 @WebMvcTest(HelloWorldRestController.class)
 class HelloWorldRestControllerTest {
 //    Testing web layer
