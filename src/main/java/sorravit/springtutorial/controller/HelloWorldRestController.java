@@ -7,8 +7,11 @@ import sorravit.springtutorial.service.GetMessageService;
 
 @RestController
 public class HelloWorldRestController {
-    @Autowired
-    private GetMessageService getMessageService;
+    private final GetMessageService getMessageService;
+
+    public HelloWorldRestController(GetMessageService getMessageService) {
+        this.getMessageService = getMessageService;
+    }
 
     @GetMapping("/")
     public String greeting() {
