@@ -9,11 +9,11 @@ import org.springframework.stereotype.Service;
 @EnableCaching
 @Slf4j
 public class GetMessageService {
-    public String getMessage() {
+    public String getWelcomeMessage() {
         return "Hello World!";
     }
     @Cacheable("message")
-    public String getMessage(String name) {
+    public String getWelcomeMessage(String name) {
         log.info("Cache miss for message with name: " + name);
         return "Hello " + name + "!";
     }

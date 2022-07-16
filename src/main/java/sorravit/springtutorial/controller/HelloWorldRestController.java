@@ -17,11 +17,11 @@ public class HelloWorldRestController {
 
     @GetMapping("/")
     public String greeting() {
-        return getMessageService.getMessage();
+        return getMessageService.getWelcomeMessage();
     }
 
     @GetMapping("/{name}")
     public String greetingWithName(@PathVariable String name) {
-        return getMessageService.getMessage(name);
+        return getMessageService.getWelcomeMessage(name);
     }
 }

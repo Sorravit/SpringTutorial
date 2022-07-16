@@ -28,7 +28,7 @@ class HelloWorldRestControllerTest {
 
     @Test
     public void shouldReturnDefaultMessage() throws Exception {
-        when(service.getMessage()).thenReturn("Hello World!");
+        when(service.getWelcomeMessage()).thenReturn("Hello World!");
         this.mockMvc.perform(get("/")).andDo(print()).andExpect(status().isOk())
                 .andExpect(content().string(containsString("Hello World!")));
     }
