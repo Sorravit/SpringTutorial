@@ -37,6 +37,11 @@ dependencies {
     // https://mvnrepository.com/artifact/org.springdoc/springdoc-openapi-ui
     implementation 'org.springdoc:springdoc-openapi-ui:1.6.9'
 
+    //  Cache
+    implementation 'org.springframework.boot:spring-boot-starter-cache:2.7.1'
+    implementation 'org.springframework.boot:spring-boot-starter-data-redis:2.7.1'
+
+
 }
 
 tasks.named('test') {
