@@ -14,7 +14,7 @@ public class GetMessageService {
     }
     @Cacheable("message")
     public String getWelcomeMessage(String name) {
-        log.info("Cache miss for message with name: " + name);
+        log.info("Cache miss for message with name: {}", name);
         return "Hello " + name + "!";
     }
 }
