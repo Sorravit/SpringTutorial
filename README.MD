@@ -14,7 +14,11 @@ To start the MySQL database:
 ```shell
 sh run.sh start_database
 ```
+### Running Database Migrations
+```shell
+sh run.sh database_migrate
 
+```
 ### Running the Application
 ```shell
 ./gradlew bootRun
